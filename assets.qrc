@@ -1,0 +1,34 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/cluster_sky_front_0000.png</file>
+        <file>images/d-m-gunselLogoSmall.png</file>
+        <file>images/gunsel_logo_dikey+1.png</file>
+        <file>images/indicators/Asset 17.png</file>
+        <file>images/indicators/Asset 18.png</file>
+        <file>images/indicators/Asset 27.png</file>
+        <file>images/indicators/Asset 29.png</file>
+        <file>images/indicators/Asset 30.png</file>
+        <file>images/indicators/Asset 31.png</file>
+        <file>images/indicators/Asset 32.png</file>
+        <file>images/indicators/Asset 33.png</file>
+        <file>images/indicators/Asset 34.png</file>
+        <file>images/indicators/Asset 38.png</file>
+        <file>images/indicators/Asset 39.png</file>
+        <file>images/indicators/Asset 40.png</file>
+        <file>images/indicators/Asset 43.png</file>
+        <file>images/indicators/Asset 45.png</file>
+        <file>images/indicators/Asset 46.png</file>
+        <file>images/indicators/Asset 48.png</file>
+        <file>images/indicators/Asset 49.png</file>
+        <file>images/indicators/Asset 50.png</file>
+        <file>images/indicators/Asset41.png</file>
+        <file>images/indicators/Asset42.png</file>
+        <file>images/indicators/Asset44.png</file>
+        <file>images/indicators/Asset51.png</file>
+        <file>images/indicators/Exterior_Light_Malfunction.png</file>
+        <file>images/indicators/High_Beam.png</file>
+        <file>images/indicators/Low_Beam.png</file>
+        <file>images/indicators/Position_Light.png</file>
+        <file>images/indicators/Rear_Fog.png</file>
+    </qresource>
+</RCC>
