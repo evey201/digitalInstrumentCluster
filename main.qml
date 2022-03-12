@@ -112,14 +112,60 @@ Window {
 
                     Flow {
                         id: belowLogoId
-                        topPadding: 10
+                        topPadding: 2
 
                         Rectangle {
                             id: bottomIndicators
                             width: 500
-                            height: 50
+                            height: 40
                             color: "black"
                             border.color: "yellow"
+                            Text {
+                                anchors.centerIn: parent
+                                text: "Bottom Indicators"
+                                color: "white"
+                            }
+                        }
+                    }
+                    Row {
+                        topPadding: 5
+                        bottomPadding:5
+                        spacing: 100
+
+                        Rectangle {
+                            width: 100
+                            height: 40
+                            color: "black"
+                            border.color: "yellow"
+                            Text {
+                                anchors.centerIn: parent
+                                text: "Gears"
+                                color: "white"
+                            }
+                        }
+
+                        Rectangle {
+                            width: 100
+                            height: 40
+                            color: "black"
+                            border.color: "yellow"
+                            Text {
+                                anchors.centerIn: parent
+                                text: "Time"
+                                color: "white"
+                            }
+                        }
+
+                        Rectangle {
+                            width: 100
+                            height: 40
+                            color: "black"
+                            border.color: "yellow"
+                            Text {
+                                anchors.centerIn: parent
+                                text: "SoC"
+                                color: "white"
+                            }
                         }
                     }
                 }
@@ -127,6 +173,7 @@ Window {
             }
 
             Flow {
+                anchors.top: rowId.TopRight
 
                 Rectangle {
 //                    anchors.right: rowId.right
