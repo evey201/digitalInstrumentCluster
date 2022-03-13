@@ -33,17 +33,9 @@ Window {
                 leftPadding: 180
                 spacing: 350
 
-                Rectangle {
-                        color: 'black'
-                        border.color: "yellow"
-                        width: 300
-                        height: 50
-                        Text {
-                            anchors.centerIn: parent
-                            text: "Top-Left Indicators"
-                            color: "white"
-                        }
-                 }
+                TopIndicatorsUI {
+
+                }
 
                 Rectangle {
                         color: 'black'
