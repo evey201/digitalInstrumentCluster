@@ -35,7 +35,7 @@ Window {
 
 
 //                Top Left Indicator
-                TopIndicatorsUI {
+                IndicatorUI {
                     Row {
 //                        id: rowId
                         anchors.centerIn: parent
@@ -107,7 +107,7 @@ Window {
                 }
 
 //                Top right Indicators
-                TopIndicatorsUI {
+                IndicatorUI {
                     Row {
 //                        id: rowId
                         anchors.centerIn: parent
@@ -235,9 +235,9 @@ Window {
                         id: belowLogoId
                         topPadding: 2
 
-                        TopIndicatorsUI {
-                            wide: 500
-                            height: 40
+                        IndicatorUI {
+                            rectWidth: 500
+                            rectHeight: 40
 
                             Row {
 //                                id: rowId
@@ -329,12 +329,25 @@ Window {
                         }
                     }
                     Row {
-                        topPadding: 14
-//                        bottomPadding:5
+                        topPadding: 5
+                        bottomPadding:5
                         spacing: 100
 
-                        Gears {
+                        IndicatorUI {
+                            rectWidth: 100
+                            rectHeight: 40
 
+                            Text {
+                                id: gearsId
+                                anchors.centerIn: parent
+                                text: "P"
+                                font: {
+                                    bold: true
+                                    pixelSize: 32
+                                }
+
+                                color: "red"
+                            }
                         }
 
                         Rectangle {

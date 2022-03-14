@@ -1,9 +1,9 @@
 <RCC>
     <qresource prefix="/">
         <file>main.qml</file>
-        <file>TopIndicatorsUI.qml</file>
         <file>TopRightIndicators.qml</file>
         <file>BottomIndicators.qml</file>
         <file>Gears.qml</file>
+        <file>IndicatorUI.qml</file>
     </qresource>
 </RCC>
