@@ -22,6 +22,8 @@ Window {
         height: 400
         radius: width
 
+
+
         Row {
             id: rowId
 //            spacing: 350
@@ -350,16 +352,8 @@ Window {
                             }
                         }
 
-                        Rectangle {
-                            width: 100
-                            height: 40
-                            color: "black"
-                            border.color: "yellow"
-                            Text {
-                                anchors.centerIn: parent
-                                text: "Time"
-                                color: "white"
-                            }
+                        DigitalClock {
+
                         }
 
                         Rectangle {
