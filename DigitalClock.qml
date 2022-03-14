@@ -1,16 +1,18 @@
+//This file is to display the time on screen
 import QtQuick 2.11
+
+
 
 Item {
     id : clock
     width: 100
     height: 40
     property var locale: Qt.locale()
-
+//    function to get current time
     function timeChanged() {
-//        var date = new Date().toLocaleTimeString(locale, Locale.LongFormat).slice(0);
-//        console.log(date.format("HH:mm:ss"));
+//        regex to show  HH:MM:SS
         var date = new Date().toTimeString().replace(/.*(\d{2}:\d{2}:\d{2}).*/, "$1");
-        console.log(date)
+//        console.log(date)
 
         return date;
     }

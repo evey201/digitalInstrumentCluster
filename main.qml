@@ -192,23 +192,27 @@ Window {
             anchors.topMargin: 10
 
             Flow {
-                id: speedId
+//                id: speedId
                 leftPadding: 50
                 spacing: 10
 
-                Rectangle {
-                    color: 'black'
-                    border.color: "yellow"
-                    width: 280
-                    height: width
-                    radius: width
+
+                IndicatorUI {
+                    id: speedId
+                    rectHeight: 280
+                    rectWidth: 280
+                    rectRadius: width
+
 
                     Text {
-                        anchors.centerIn: parent
-                        text: "Speedometer"
+                        id: speed
+                        text: "50km/hr"; font.pointSize: 36
+                         anchors.centerIn: parent
                         color: "white"
                     }
+
                 }
+
               }
             Flow {
                 id: centerId
@@ -351,7 +355,7 @@ Window {
                                 color: "red"
                             }
                         }
-
+//                         A display clock for the screen
                         DigitalClock {
 
                         }
@@ -373,11 +377,9 @@ Window {
             }
 
             Flow {
-//                anchors.top: rectId.BottomRight
                 leftPadding: 50
 
                 Rectangle {
-//                    anchors.right: rectId.right
                     color: 'black'
                     border.color: "yellow"
                     width: 280

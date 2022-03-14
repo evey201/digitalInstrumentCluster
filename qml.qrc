@@ -6,5 +6,7 @@
         <file>Gears.qml</file>
         <file>IndicatorUI.qml</file>
         <file>DigitalClock.qml</file>
+        <file>Shader.qml</file>
+        <file>Speedometer.qml</file>
     </qresource>
 </RCC>
