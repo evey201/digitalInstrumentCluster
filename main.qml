@@ -1,4 +1,4 @@
-import QtQuick 2
+import QtQuick 2.11
 import QtQuick.Window 2.4
 import QtQuick.Controls 2.4
 import QtQuick.Layouts
@@ -33,21 +33,149 @@ Window {
                 leftPadding: 180
                 spacing: 350
 
-                TopIndicatorsUI {
 
+//                Top Left Indicator
+                TopIndicatorsUI {
+                    Row {
+//                        id: rowId
+                        anchors.centerIn: parent
+                        spacing: 2
+
+
+                        Image {
+                            id: assetOne
+                            source: "images/indicators/Asset41.png"
+                            width: 50
+                            height: 20
+                            opacity: 0.5
+                            fillMode: Image.PreserveAspectFit
+
+                        }
+
+                        Image {
+                            id: assetTwo
+                            source: "images/indicators/Asset44.png"
+                            width: 50
+                            height: 20
+                            opacity: 0.5
+                            fillMode: Image.PreserveAspectFit
+
+                        }
+
+                        Image {
+                            id: assetThree
+                            source: "images/indicators/Asset42.png"
+                            width: 50
+                            height: 20
+                            opacity: 0.5
+                            fillMode: Image.PreserveAspectFit
+
+                        }
+
+                        Image {
+                            id: assetFour
+                            source: "images/indicators/Asset51.png"
+                            width: 50
+                            height: 20
+                            opacity: 0.5
+                            fillMode: Image.PreserveAspectFit
+
+                        }
+
+                        Image {
+                            id: assetFive
+                            source: "images/indicators/High_Beam.png"
+                            width: 50
+                            height: 20
+                            opacity: 0.5
+                            fillMode: Image.PreserveAspectFit
+
+                        }
+
+                        Image {
+                            id: assetSix
+                            source: "images/indicators/Asset 18.png"
+                            width: 50
+                            height: 20
+                            opacity: 0.5
+                            fillMode: Image.PreserveAspectFit
+
+                        }
+                    }
+
+                    focus: true
                 }
 
-                Rectangle {
-                        color: 'black'
-                        border.color: "yellow"
-                        width: 300
-                        height: 50
-                        Text {
-                            anchors.centerIn: parent
-                            text: "Top-Left Indicators"
-                            color: "white"
+//                Top right Indicators
+                TopIndicatorsUI {
+                    Row {
+//                        id: rowId
+                        anchors.centerIn: parent
+                        spacing: 2
+//                        focus: true
+
+
+                        Image {
+                            id: asset7
+                            source: "images/indicators/Asset 39.png"
+                            width: 50
+                            height: 20
+                            opacity: 0.5
+                            fillMode: Image.PreserveAspectFit
+
                         }
-                 }
+
+                        Image {
+                            id: asset8
+                            source: "images/indicators/Asset 40.png"
+                            width: 50
+                            height: 20
+                            opacity: 0.5
+                            fillMode: Image.PreserveAspectFit
+
+                        }
+
+                        Image {
+                            id: asset9
+                            source: "images/indicators/Asset 32.png"
+                            width: 50
+                            height: 20
+                            opacity: 0.5
+                            fillMode: Image.PreserveAspectFit
+
+                        }
+
+                        Image {
+                            id: asset10
+                            source: "images/indicators/Asset 30.png"
+                            width: 50
+                            height: 20
+                            opacity: 0.5
+                            fillMode: Image.PreserveAspectFit
+
+                        }
+
+                        Image {
+                            id: asset11
+                            source: "images/indicators/Low_Beam.png"
+                            width: 50
+                            height: 20
+                            opacity: 0.5
+                            fillMode: Image.PreserveAspectFit
+
+                        }
+
+                        Image {
+                            id: asset12
+                            source: "images/indicators/Asset 34.png"
+                            width: 50
+                            height: 20
+                            opacity: 0.5
+                            fillMode: Image.PreserveAspectFit
+
+                        }
+                    }
+                }
 
             }
 
@@ -83,13 +211,14 @@ Window {
             Flow {
                 id: centerId
                 Column {
-                    anchors.centerIn: screenBorder.Center
-                    leftPadding: 20
+//                    anchors.centerIn: screenBorder.parent
+                    leftPadding: 30
+                    rightPadding: 30
 
                     Image {
                         id: logoId
                         source: "images/d-m-gunselLogoSmall.png"
-                        width: 400
+                        width: 500
                         height: 20
                         fillMode: Image.PreserveAspectFit
                     }
@@ -106,34 +235,106 @@ Window {
                         id: belowLogoId
                         topPadding: 2
 
-                        Rectangle {
-                            id: bottomIndicators
-                            width: 500
+                        TopIndicatorsUI {
+                            wide: 500
                             height: 40
-                            color: "black"
-                            border.color: "yellow"
-                            Text {
+
+                            Row {
+//                                id: rowId
                                 anchors.centerIn: parent
-                                text: "Bottom Indicators"
-                                color: "white"
+                                spacing: 2
+                                focus: true
+
+
+                                Image {
+                                    id: bOne
+                                    source: "images/indicators/Asset51.png"
+                                    width: 50
+                                    height: 20
+                                    opacity: 0.5
+                                    fillMode: Image.PreserveAspectFit
+
+                                }
+
+                                Image {
+                                    id: bTwo
+                                    source: "images/indicators/Asset 50.png"
+                                    width: 50
+                                    height: 20
+                                    opacity: 0.5
+                                    fillMode: Image.PreserveAspectFit
+
+                                }
+
+                                Image {
+                                    id: bThree
+                                    source: "images/indicators/Asset 38.png"
+                                    width: 50
+                                    height: 20
+                                    opacity: 0.5
+                                    fillMode: Image.PreserveAspectFit
+
+                                }
+
+                                Image {
+                                    id: bFour
+                                    source: "images/indicators/Asset 49.png"
+                                    width: 50
+                                    height: 20
+                                    opacity: 0.5
+                                    fillMode: Image.PreserveAspectFit
+
+                                }
+
+                                Image {
+                                    id: bFive
+                                    source: "images/indicators/Asset 46.png"
+                                    width: 50
+                                    height: 20
+                                    opacity: 0.5
+                                    fillMode: Image.PreserveAspectFit
+
+                                }
+
+                                Image {
+                                    id: bSix
+                                    source: "images/indicators/Asset 45.png"
+                                    width: 50
+                                    height: 20
+                                    opacity: 0.5
+                                    fillMode: Image.PreserveAspectFit
+
+                                }
+
+                                Image {
+                                    id: bSeven
+                                    source: "images/indicators/Asset 48.png"
+                                    width: 50
+                                    height: 20
+                                    opacity: 0.5
+                                    fillMode: Image.PreserveAspectFit
+
+                                }
+
+                                Image {
+                                    id: bEight
+                                    source: "images/indicators/Asset 33.png"
+                                    width: 50
+                                    height: 20
+                                    opacity: 0.5
+                                    fillMode: Image.PreserveAspectFit
+
+                                }
                             }
                         }
                     }
                     Row {
-                        topPadding: 5
-                        bottomPadding:5
+                        topPadding: 14
+//                        bottomPadding:5
                         spacing: 100
 
-                        Rectangle {
-                            width: 100
-                            height: 40
-                            color: "black"
-                            border.color: "yellow"
-                            Text {
-                                anchors.centerIn: parent
-                                text: "Gears"
-                                color: "white"
-                            }
+                        Gears {
+
                         }
 
                         Rectangle {
@@ -165,10 +366,11 @@ Window {
             }
 
             Flow {
-                anchors.top: rowId.TopRight
+//                anchors.top: rectId.BottomRight
+                leftPadding: 50
 
                 Rectangle {
-//                    anchors.right: rowId.right
+//                    anchors.right: rectId.right
                     color: 'black'
                     border.color: "yellow"
                     width: 280
