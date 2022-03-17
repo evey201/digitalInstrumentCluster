@@ -29,7 +29,7 @@ Item {
         Text {
             id: time
             anchors.centerIn: parent
-            color:  "white"
+            color:  "Yellow"
         }
     }
 
