@@ -37,11 +37,13 @@ Window {
                 Flow {
                     id: topIndicatorsId
                     leftPadding: 180
-                    spacing: 350
+                    spacing: 150
 
 
     //                Top Left Indicator
                     IndicatorUI {
+                        rectWidth: 400
+//                        opened: false
                         Row {
     //                        id: rowId
                             anchors.centerIn: parent
@@ -114,6 +116,7 @@ Window {
 
     //                Top right Indicators
                     IndicatorUI {
+                        rectWidth: 400
                         Row {
     //                        id: rowId
                             anchors.centerIn: parent
@@ -194,11 +197,13 @@ Window {
                 id: speedLogoAndPowerId
                 anchors.top: rowId.bottom
                 anchors.topMargin: 10
+                spacing: 50
+
 
                 Flow {
     //                id: speedId
                     leftPadding: 50
-                    spacing: 10
+//                    spacing: 10
 
 
                     IndicatorUI {
@@ -221,9 +226,8 @@ Window {
                 Flow {
                     id: centerId
                     Column {
-    //                    anchors.centerIn: screenBorder.parent
-                        leftPadding: 30
-                        rightPadding: 30
+//                        leftPadding: 30
+//                        rightPadding: 30
 
                         Image {
                             id: logoId
@@ -350,12 +354,7 @@ Window {
                                 Text {
                                     id: gearsId
                                     anchors.centerIn: parent
-                                    text: "P"
-                                    font: {
-                                        bold: true
-                                        pixelSize: 32
-                                    }
-
+                                    text: "P"; font.bold: true;
                                     color: "red"
                                 }
                             }
@@ -381,7 +380,7 @@ Window {
                 }
 
                 Flow {
-                    leftPadding: 50
+                    rightPadding: 80
 
                     Rectangle {
                         color: 'black'
