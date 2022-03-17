@@ -211,13 +211,18 @@ Window {
                         rectHeight: 280
                         rectWidth: 280
                         rectRadius: width
+                        rectOpacity: (count <= 60) ? 0.3 : 0.2 ||
+                                 (count > 60 <= 120) ? 0.6 : 0.3 ||
+                                 (count > 120 <= 180) ? 0.8 : 0.6 ||
+                                 (count > 180 <= 240) ? 1.0 : 0.6
 
 
                         Text {
                             id: speed
-                            text: "speed";
+                            text: "speed"; font.pointSize: 30
                              anchors.centerIn: parent
                             color: "white"
+                            opacity: 1.0
                         }
 
                     }

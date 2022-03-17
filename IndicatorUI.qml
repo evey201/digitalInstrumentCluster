@@ -7,6 +7,7 @@ import Qt.labs.settings 1.1
 FocusScope {
     property alias rectWidth: rectsId.width
     property alias rectHeight: rectsId.height
+    property alias rectOpacity: rectsId.opacity
     property int count: 0
     property bool opened: false
     width: rectsId.width
@@ -15,12 +16,11 @@ FocusScope {
 
 
     function accelerate() {
-//        var count = 0
-//                        count+= 1;
-        console.log(count)
-        if (count <= 255) {
+        if (count <= 239) {
             count+=1
-            console.log(count)
+
+
+//            console.log(count)
         }
 
         return
@@ -28,9 +28,10 @@ FocusScope {
     }
 
     function deccelerate() {
-        if (count <= 255) {
+        if (count <= 240) {
             count-=1
-            console.log(count)
+//            console.log(count)
+            if (count === 0) return
         }
 
         return
@@ -43,6 +44,7 @@ FocusScope {
         width: 300
         height: 50
         focus: true
+        opacity: 1
 
 
         //            Assigning key to keyBoard
@@ -207,8 +209,13 @@ FocusScope {
                 gearsId.text = "R"
                 gearsId.color = "yellow"
             }
-            else if (event.key === Qt.Key_0) {
+            else if (event.key === Qt.Key_W) {
                 accelerate()
+                speed.text = count
+                console.log(speedId.rectOpacity)
+            }
+            else if (event.key === Qt.Key_S) {
+                deccelerate()
                 speed.text = count
             }
 
