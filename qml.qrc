@@ -8,5 +8,6 @@
         <file>DigitalClock.qml</file>
         <file>Shader.qml</file>
         <file>Speedometer.qml</file>
+        <file>Soc.qml</file>
     </qresource>
 </RCC>

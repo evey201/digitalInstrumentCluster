@@ -219,7 +219,7 @@ Window {
 
                         Text {
                             id: speed
-                            text: "speed"; font.pointSize: 30
+                            text: "0"; font.pointSize: 30
                              anchors.centerIn: parent
                             color: "white"
                             opacity: 1.0
@@ -368,17 +368,23 @@ Window {
 
                             }
 
-                            Rectangle {
-                                width: 100
-                                height: 40
-                                color: "black"
-                                border.color: "yellow"
-                                Text {
-                                    anchors.centerIn: parent
-                                    text: "SoC"
-                                    color: "white"
-                                }
+//                            Display of Soc
+
+                            Soc {
+
                             }
+
+//                            Rectangle {
+//                                width: 100
+//                                height: 40
+//                                color: "black"
+//                                border.color: "yellow"
+//                                Text {
+//                                    anchors.centerIn: parent
+//                                    text: "SoC"
+//                                    color: "white"
+//                                }
+//                            }
                         }
                     }
 
