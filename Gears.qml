@@ -12,7 +12,7 @@ Rectangle {
 
     Keys.onPressed: {
         if (event.key === Qt.Key_Z) {
-            console.log('here')
+//            console.log('here')
             gearsId.text = D
             gearsId.color = "green"
         }
@@ -22,7 +22,7 @@ Rectangle {
         id: gearsId
         anchors.centerIn: parent
         text: "P"
-        color: "red"
+        color: "yellow"
     }
 
     Component.onCompleted: {

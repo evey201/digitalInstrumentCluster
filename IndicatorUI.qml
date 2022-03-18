@@ -8,8 +8,11 @@ FocusScope {
     property alias rectWidth: rectsId.width
     property alias rectHeight: rectsId.height
     property alias rectOpacity: rectsId.opacity
+    property alias rectColor: rectsId.color
+    property alias rectBorderColor: rectsId.border.color
     property int count: 0
     property bool opened: false
+    property bool isBlink: false
     width: rectsId.width
     height: rectsId.height
     property alias rectRadius: rectsId.radius
@@ -36,6 +39,7 @@ FocusScope {
 
         return
     }
+
 
     Rectangle {
         id: rectsId
@@ -126,10 +130,10 @@ FocusScope {
             else if (event.key === Qt.Key_Y) {
                 if (bFour.opacity === 1.0) {
                     bFour.opacity = 0.5
-                    asset11.opacity = 0.5
+//                    asset11.opacity = 0.5
                     return
                 }
-                asset11.opacity = 1.0
+//                asset11.opacity = 1.0
                 bFour.opacity = 1.0
             }
             else if (event.key === Qt.Key_R) {
@@ -190,14 +194,14 @@ FocusScope {
                 bEight.opacity = 1
             }
             else if (event.key === Qt.Key_Z) {
-                console.log('here')
+//                console.log('here')
                 gearsId.text = "D"
                 gearsId.color = "green"
             }
             else if (event.key === Qt.Key_V) {
                 //                    console.log('here')
                 gearsId.text = "P"
-                gearsId.color = "red"
+                gearsId.color = "yellow"
             }
             else if (event.key === Qt.Key_X) {
                 //                    console.log('here')
@@ -205,14 +209,14 @@ FocusScope {
                 gearsId.color = "white"
             }
             else if (event.key === Qt.Key_C) {
-                console.log('here')
+//                console.log('here')
                 gearsId.text = "R"
-                gearsId.color = "yellow"
+                gearsId.color = "red"
             }
             else if (event.key === Qt.Key_W) {
                 accelerate()
                 speed.text = count
-                console.log(speedId.rectOpacity)
+//                console.log(speedId.rectOpacity)
             }
             else if (event.key === Qt.Key_S) {
                 deccelerate()

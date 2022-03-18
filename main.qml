@@ -221,7 +221,7 @@ Window {
                             id: speed
                             text: "0"; font.pointSize: 30
                              anchors.centerIn: parent
-                            color: "white"
+                            color: "yellow"
                             opacity: 1.0
                         }
 
@@ -360,7 +360,7 @@ Window {
                                     id: gearsId
                                     anchors.centerIn: parent
                                     text: "P"; font.bold: true;
-                                    color: "red"
+                                    color: "yellow"
                                 }
                             }
     //                         A display clock for the screen
@@ -374,17 +374,7 @@ Window {
 
                             }
 
-//                            Rectangle {
-//                                width: 100
-//                                height: 40
-//                                color: "black"
-//                                border.color: "yellow"
-//                                Text {
-//                                    anchors.centerIn: parent
-//                                    text: "SoC"
-//                                    color: "white"
-//                                }
-//                            }
+
                         }
                     }
 
@@ -393,17 +383,18 @@ Window {
                 Flow {
                     rightPadding: 80
 
-                    Rectangle {
-                        color: 'black'
-                        border.color: "yellow"
-                        width: 280
-                        height: width
-                        radius: width
+                    IndicatorUI {
+                        rectColor: 'black'
+                        rectBorderColor: "yellow"
+                        rectWidth: 280
+                        rectHeight: rectWidth
+                        rectRadius: rectWidth
+
 
                         Text {
                             anchors.centerIn: parent
-                            text: "Power Guage"
-                            color: "white"
+                            text: "Charge/Power Guage"
+                            color: "yellow"
                         }
                     }
                 }
